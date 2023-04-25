@@ -23,4 +23,4 @@ int print_address(va_list l, flags_t *f)
 	count += _puts(str);
 	return (count);
 }
-/* Code crafted with love and caffeine */
+/* Code crafted with love and caffeine. */
