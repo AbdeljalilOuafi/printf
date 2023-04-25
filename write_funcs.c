@@ -7,7 +7,7 @@
  * @c: The character to print
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
- * Code crafted with love and caffeine
+ * Code crafted with love and caffeine.
  * Description: In order to minimize the number of
  * times the write function is called, _putchar utilizes
  * a local buffer with a capacity of 1024
