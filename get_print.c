@@ -4,6 +4,7 @@
  * get_print - selecting the appropriate printing
  * function to be used
  * @s: character that is holding the conversion specifier
+ * Code crafted with love and caffeine
  * Description: The function searches through the func_arr[] array
  * of structs to match the specifier passed to the _printf function
  * with the first element of each struct. Once a match is found
