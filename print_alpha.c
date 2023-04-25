@@ -5,6 +5,7 @@
  * each character
  * @l: va_list arguments from _printf
  * @f: pointer to the struct flags that determines
+ * Code crafted with love and caffeine
  * whether a flag is passed to _printf
  * Return:the number of char printed
  */
