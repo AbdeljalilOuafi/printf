@@ -3,12 +3,14 @@
 #include <stdio.h>
 
 /**
- * _printf - produces output according to a format
- * @format: format string containing the characters and the specifiers
- * Description: this function will call the get_print() function that will
- * determine which printing function to call depending on the conversion
- * specifiers contained into fmt
- * Return: length of the formatted output string
+ * _printf - generates output according to the format
+ * @format: a string that includes both the characters
+ * and the specifiers used for formatting
+ * Description: When this function is called, it will
+ * invoke the get_print() function. The get_print() function will
+ * then determine which printing function to call based on
+ * the conversion specifiers found in the fmt parameter.
+ * Return: length of formatted output string
  */
 int _printf(const char *format, ...)
 {
