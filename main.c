@@ -4,6 +4,7 @@
 
 /**
  * main - entry point
+ * Code crafted with love and caffeine
  * Return: 0
  */
 
