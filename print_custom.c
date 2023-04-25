@@ -5,6 +5,7 @@
  * (0 < ASCII value < 32 or >= 127) are
  * printed this way: \x, followed by the ASCII code
  * value in hexa (upper case - always 2 characters)
+ * Code crafted with love and caffeine
  * @l: va_list are arguments from _printf
  * @f: pointer to the struct flags that determines
  * whether a flag is passed to _printf or not
