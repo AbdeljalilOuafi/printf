@@ -50,4 +50,4 @@ int _printf(const char *format, ...)
 	return (count);
 
 }
-/*Code crafted with love and caffeine*/
+/*Code crafted with love and caffeine.*/
