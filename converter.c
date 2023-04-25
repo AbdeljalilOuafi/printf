@@ -5,6 +5,7 @@
  * @num: input num
  * @base: input base
  * @lowercase: determines whether the hexadecimal
+ * Code crafted with love and caffeine
  * values should be in lowercase or not
  * Return: result string
  */
