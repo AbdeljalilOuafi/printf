@@ -4,7 +4,7 @@
  * print_int - prints an integer
  * @l: va_list of arguments from _printf
  * @f: a pointer to the flags struct which determines
- * Code crafted with love and caffeine
+ * Code crafted with love and caffeine.
  * whether a flag has been passed to the _printf function
  * Return: the number of chars to be printed
  */
