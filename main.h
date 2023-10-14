@@ -10,6 +10,7 @@ int _printf(const char *format, ...);
 /* write functions */
 int _putchar(char c);
 int handle_string(char *str);
+int handle_integer(int num);
 
 /* formatting */
 int handle_format(const char *format, va_list args);

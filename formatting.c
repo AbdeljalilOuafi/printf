@@ -12,6 +12,7 @@ int handle_format(const char *format, va_list args)
 	char c;
 	char *str;
 	int count = 0;
+	int number;
 
 	if (*format == 'c')
 	{
@@ -23,6 +24,11 @@ int handle_format(const char *format, va_list args)
 	{
 		str = va_arg(args, char *);
 		count += handle_string(str);
+	}
+	else if (*format == 'd' || *format == 'i')
+	{
+		number = va_arg(args, int);
+		count += handle_integer(number);
 	}
 	else if (*format == '%')
 	{
@@ -55,5 +61,5 @@ const char *skip_format_specifier(const char *format)
  */
 int is_format_specifier(char c)
 {
-	return (c == 'c' || c == 's' || c == '%');
+	return (c == 'c' || c == 's' || c == '%' || c == 'd' || c == 'i');
 }
