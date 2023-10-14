@@ -20,5 +20,5 @@ int handle_string(char *str)
 		str++;
 		count++;
 	}
-	return (count);
+	return (count - 1);
 }

@@ -9,9 +9,15 @@
 */
 int handle_integer(int num)
 {
+	int i;
+
 	char buffer[12];
 
 	int position = 0;
+
+	int start;
+
+	int end;
 
 	if (num < 0)
 	{
@@ -27,13 +33,13 @@ int handle_integer(int num)
 	{
 		int remainder = num % 10; /*example : if num = 123, remainder would be 3*/
 		buffer[position] = remainder + '0'; /*in this line 3 turns into a string by adding '0' to it,
-											 and storing it on the first index of buffer which is 0*/
+											 and storing it on the first index of buffer which is 0 */
 		position++; /*move the index of buffer by 1 to store the next number and also gives us the length of the number to return to printf*/
 		num = num / 10; /*this line gets the next number
 						  example : 123 / 10 is 12*/
 	}
-	int start = 0;
-	int end = position - 1;
+	start = 0;
+	end = position - 1;
 	/*Reversing the string using the swap method*/
 	while (start < end)
 	{
@@ -45,7 +51,7 @@ int handle_integer(int num)
 	}
 	buffer[position] = '\0';
 	/*Printing the string*/
-	for (int i = 0; i < position; i++)
+	for (i = 0; i < position; i++)
 	{
 		_putchar(buffer[i]);
 	}
