@@ -6,7 +6,7 @@
 */
 int handle_string(char *str)
 {
-	int count = 0;
+	int count;
 
 	if (str == NULL)
 	{
@@ -17,8 +17,8 @@ int handle_string(char *str)
 	while (*str)
 	{
 		_putchar(*str);
-		str++;
 		count++;
+		str++;
 	}
 	return (count);
 }

@@ -22,8 +22,8 @@ int main(void)
 	int count;
 
 	int count2;
-	
-	count = _printf("%s\n", "hi");
+
+	count = _printf("%s user\n", "hi");
 	printf("hi = %d\n", count);
 	count2 = _printf("%c\n", 'b');
 	printf("b = %d", count2);
