@@ -37,29 +37,3 @@ int handle_format(const char *format, va_list args)
 	}
 	return (count);
 }
-
-/**
- * skip_format_specifier - advances the format string to the next specifier
- * @format: pointer to the current format specifier
- *
- * Return: pointer to the next format specifier
- */
-const char *skip_format_specifier(const char *format)
-{
-	while (*format && is_format_specifier(*format))
-	{
-		format++;
-	}
-	return (format);
-}
-
-/**
- * is_format_specifier - checks if a character is a valid format specifier
- * @c: the character to check
- *
- * Return: 1 if it's a valid specifier, 0 otherwise
- */
-int is_format_specifier(char c)
-{
-	return (c == 'c' || c == 's' || c == '%' || c == 'd' || c == 'i');
-}

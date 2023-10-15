@@ -1,0 +1,17 @@
+#include "main.c"
+
+
+/**
+ * skip_format_specifier - advances the format string to the next specifier
+ * @format: pointer to the current format specifier
+ *
+ * Return: pointer to the next format specifier
+ */
+const char *skip_format_specifier(const char *format)
+{
+	while (*format && is_format_specifier(*format))
+	{
+		format++;
+	}
+	return (format);
+}
