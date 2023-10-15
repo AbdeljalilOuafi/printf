@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * is_format_specifier - checks if a character is a valid format specifier
