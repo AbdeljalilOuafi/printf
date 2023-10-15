@@ -6,23 +6,23 @@
 */
 int handle_string(char *str)
 {
-	/*char *null;*/
+	char *null;
 
 	int count;
 
-	/*int i;*/
+	int i;
 
-	/*if (str == NULL)*/
-	/*{*/
-		/*null = "(null)";*/
+	(str == NULL)
+	{
+		null = "(null)";
 
-		/*for (i = 0; i < 6; i++)*/
-		/*{*/
-			/*_putchar(*null);*/
-			/*null++;*/
-		/*}*/
-		/*return (6);*/
-	/*}*/
+		for (i = 0; i < 6; i++)
+		{
+			_putchar(*null);
+			null++;
+		}
+		return (6);
+	}
 
 	while (*str)
 	{
