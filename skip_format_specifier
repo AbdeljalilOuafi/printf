@@ -9,9 +9,9 @@
  */
 const char *skip_format_specifier(const char *format)
 {
-	while (*format && is_format_specifier(*format))
-	{
-		format++;
-	}
-	return (format);
+	/*while (*format && is_format_specifier(*format))*/
+	/*{*/
+		/*format++;*/
+	/*}*/
+	/*return (format);*/
 }
