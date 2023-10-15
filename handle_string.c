@@ -24,7 +24,7 @@ int handle_string(char *str)
 		return (6);
 	}
 
-	while (*str) 
+	while (*str)
 	{
 		_putchar(*str);
 		count++;
