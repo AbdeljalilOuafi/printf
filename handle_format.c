@@ -25,11 +25,11 @@ int handle_format(const char *format, va_list args)
 		str = va_arg(args, char *);
 		count += handle_string(str);
 	}
-	else if (*format == 'd' || *format == 'i')
-	{
+	/*else if (*format == 'd' || *format == 'i')*/
+	/*{*/
 		/*number = va_arg(args, int);*/
 		/*+= handle_integer(number);*/
-	}
+	/*}*/
 	else if (*format == '%')
 	{
 		_putchar('%');

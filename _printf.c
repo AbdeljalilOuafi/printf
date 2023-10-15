@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	int count;
 	va_list args;
 
-	if (!format || !format[0])
+	if (!format)
 	{
 		return (-1);
 	}
