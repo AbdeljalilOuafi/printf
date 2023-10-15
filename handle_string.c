@@ -8,13 +8,23 @@ int handle_string(char *str)
 {
 	int count;
 
+	int i;
+
+	char *null;
+
 	if (str == NULL)
 	{
-		handle_string("(null)");
+		null = "(null)";
+
+		for (i = 0; i < 6; i++)
+		{
+			_putchar(*null);
+			null++;
+		}
 		return (6);
 	}
 
-	while (*str)
+	while (*str) 
 	{
 		_putchar(*str);
 		count++;

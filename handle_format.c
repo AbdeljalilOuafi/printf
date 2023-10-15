@@ -46,7 +46,7 @@ int handle_format(const char *format, va_list args)
  */
 const char *skip_format_specifier(const char *format)
 {
-	while (*format && !is_format_specifier(*format))
+	while (*format && is_format_specifier(*format))
 	{
 		format++;
 	}
