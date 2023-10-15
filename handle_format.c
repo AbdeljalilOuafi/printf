@@ -34,6 +34,7 @@ int handle_format(const char *format, va_list args)
 	{
 		_putchar('%');
 		count++;
+		format++;
 	}
 	return (count);
 }

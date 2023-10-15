@@ -41,6 +41,6 @@ int main(void)
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
 
-    _printf("%s",NULL);
+    _printf("%s","this sentences is recieved from va_args\n");
 	return (0);
 }
