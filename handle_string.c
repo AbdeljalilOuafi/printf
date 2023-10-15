@@ -12,7 +12,7 @@ int handle_string(char *str)
 
 	int i;
 
-	(str == NULL)
+	if (str == NULL)
 	{
 		null = "(null)";
 
