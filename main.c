@@ -40,7 +40,5 @@ int main(void)
     /*printf("Len:[%d]\n", len2);*/
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
-    printf("Complete the Sentence : You %s Nothing, Jon Snow\n", (char *)0);
-    _printf("Complete the Sentence : You %s Nothing, Jon Snow\n", (char *)0);
 	return (0);
 }
