@@ -1,14 +1,12 @@
-#include <limits.h>
-#include <stdio.h>
 #include "main.h"
-
 /**
- * main - Entry point
+ * main - Entry Point
  *
- * Return: Always 0
+ * Return: 0
  */
 int main(void)
 {
+<<<<<<< HEAD
 	int len;
 	int len2;
     /*unsigned int ui;*/
@@ -40,5 +38,11 @@ int main(void)
 	printf("Len:[%d]\n", len2);
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
+=======
+	int count;
+
+	count = _printf("%s%c%%", "F", 'F');
+	printf("\n%d\n", count);
+>>>>>>> fcb0a67c67d01a58a875eb637899c842913c26e5
 	return (0);
 }
