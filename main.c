@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	_printf("hello %s your grade is %c", "user", 'F');
+	_printf("%%\n");
 	return (0);
 }

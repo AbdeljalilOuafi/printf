@@ -30,5 +30,11 @@ int handle_format(const char *format, va_list args)
 		/*number = va_arg(args, int);*/
 		/*+= handle_integer(number);*/
 	/*}*/
+	else
+	{
+		_putchar(*format);
+		count++;
+		format++;
+	}
 	return (count);
 }
