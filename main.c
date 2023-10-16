@@ -40,8 +40,5 @@ int main(void)
     /*printf("Len:[%d]\n", len2);*/
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
-    /*_printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some", "more", 'r', "s", "", "know", 't', ", Jon", '\n');*/
-    printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
-    _printf("%c%c", 'H', 'I');
 	return (0);
 }
