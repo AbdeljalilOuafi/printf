@@ -6,6 +6,9 @@
  */
 int main(void)
 {
-	_printf("%%\n");
+	int count;
+
+	count = _printf("%s%c%%", "F", 'F');
+	printf("\n%d\n", count);
 	return (0);
 }
