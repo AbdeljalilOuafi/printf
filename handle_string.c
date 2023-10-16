@@ -12,6 +12,8 @@ int handle_string(char *str)
 
 	int i;
 
+	count = 0;
+
 	if (str == NULL)
 	{
 		null = "(null)";

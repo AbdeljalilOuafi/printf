@@ -9,16 +9,16 @@
  */
 int handle_format(const char *format, va_list args)
 {
-	char c;
 	char *str;
 	int count = 0;
+	char character;
 	/*int number;*/
 
 	if (*format == 'c')
 	{
-		c = va_arg(args, int);
-		_putchar(c);
-		count++;
+		character = va_arg(args, int);
+        _putchar(character);
+        count++;
 	}
 	else if (*format == 's')
 	{
@@ -34,7 +34,6 @@ int handle_format(const char *format, va_list args)
 	{
 		_putchar('%');
 		count++;
-		format++;
 	}
 	return (count);
 }

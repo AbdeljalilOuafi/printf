@@ -14,8 +14,8 @@ int main(void)
     /*unsigned int ui;*/
     /*void *addr;*/
 
-	_printf("Let's try to printf a simple sentence.\n");
-	printf("Let's try to printf a simple sentence.\n");
+	/*_printf("Let's try to printf a simple sentence.\n");*/
+	/*printf("Let's try to printf a simple sentence.\n");*/
     /*ui = (unsigned int)INT_MAX + 1024;*/
     /*addr = (void *)0x7ffe637541f0;*/
     /*_printf("Length:[%d, %i]\n", len, len);*/
@@ -28,17 +28,20 @@ int main(void)
     /*printf("Unsigned octal:[%o]\n", ui);*/
     /*_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
     /*printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
+	/*_printf("Character:[%c]\n", 'H');*/
+	/*printf("Character:[%c]\n", 'H');*/
+	/*_printf("String:[%s]\n", "I am a string !");*/
+	/*printf("String:[%s]\n", "I am a string !");*/
     /*("Address:[%p]\n", addr);*/
     /*printf("Address:[%p]\n", addr);*/
-	_printf("Percent:[%%]\n");
-	printf("Percent:[%%]\n");
+	/*_printf("Percent:[%%]\n");*/
+	/*printf("Percent:[%%]\n");*/
     /*_printf("Len:[%d]\n", len);*/
     /*printf("Len:[%d]\n", len2);*/
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
+    /*_printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some", "more", 'r', "s", "", "know", 't', ", Jon", '\n');*/
+    printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+    _printf("%c%c", 'H', 'I');
 	return (0);
 }
