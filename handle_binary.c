@@ -1,6 +1,11 @@
 #include "main.h"
 
-
+/**
+ * handle_binary - converts an unsigned int to its
+ * binary presentation
+ * @num: integer to be converted
+ * Return: count
+*/
 int handle_binary(unsigned int num)
 {
 	int count = 0;
