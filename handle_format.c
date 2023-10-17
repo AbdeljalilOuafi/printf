@@ -31,7 +31,9 @@ int handle_format(const char *format, va_list args)
 	}
 	else
 	{
-		count += _putchar(*format);
+		write(1, "%", 1);
+		_putchar(*format);
+		count += 2;
 	}
 	return (count);
 }
