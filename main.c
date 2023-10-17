@@ -41,13 +41,6 @@ int main(void)
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
 
-	/*int count;*/
-
-	/*count = _printf("%s%c%%", "F", 'F');*/
-	/*printf("\n%d\n", count);*/
-
-    _printf("%");
-
 	return (0);
 
 }

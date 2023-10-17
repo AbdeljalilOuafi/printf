@@ -8,8 +8,11 @@
 int _printf(const char *format, ...)
 {
 	int count;
+
 	va_list args;
+
 	va_start(args, format);
+
 	count = 0;
 
 	if (!format)

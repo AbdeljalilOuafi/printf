@@ -17,7 +17,7 @@ int handle_format(const char *format, va_list args)
 	if (*format == 'c')
 	{
 		character = va_arg(args, int);
-		count +=_putchar(character);
+		count += _putchar(character);
 	}
 	else if (*format == 's')
 	{
