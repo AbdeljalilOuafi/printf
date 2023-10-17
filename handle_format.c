@@ -29,6 +29,11 @@ int handle_format(const char *format, va_list args)
 		number = va_arg(args, int);
 		count += handle_integer(number);
 	}
+	else if (*format == 'b')
+	{
+		number = va_arg(args, unsigned int);
+		count += printBinary(num);
+	}
 	else
 	{
 		write(1, "%", 1);
