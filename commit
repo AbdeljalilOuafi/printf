@@ -1,8 +1,0 @@
-#!/bin/bash
-
-
-touch file
-write=i
-i=0
-for(i=0
-echo 
