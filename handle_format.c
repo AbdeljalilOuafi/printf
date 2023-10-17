@@ -17,25 +17,21 @@ int handle_format(const char *format, va_list args)
 	if (*format == 'c')
 	{
 		character = va_arg(args, int);
-		_putchar(character);
-		count++;
+		count +=_putchar(character);
 	}
 	else if (*format == 's')
 	{
 		str = va_arg(args, char *);
 		count += handle_string(str);
 	}
-
+	else if (*format == '%')
+	{
+		count += _putchar('%');
+	}
 	else if (*format == 'd' || *format == 'i')
 	{
 		number = va_arg(args, int);
 		count += handle_integer(number);
-	}
-	else
-	{
-		_putchar(*format);
-		count++;
-		format++;
 	}
 	return (count);
 }
