@@ -46,6 +46,8 @@ int main(void)
 	/*count = _printf("%s%c%%", "F", 'F');*/
 	/*printf("\n%d\n", count);*/
 
+    _printf("%");
+
 	return (0);
 
 }
