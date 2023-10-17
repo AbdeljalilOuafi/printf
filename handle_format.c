@@ -11,6 +11,7 @@ int handle_format(const char *format, va_list args)
 {
 	int count = 0;
 	int number;
+	unsigned int num;
 
 	if (*format == 'c')
 	{
@@ -24,10 +25,20 @@ int handle_format(const char *format, va_list args)
 	{
 		count += _putchar('%');
 	}
-	else if (*format == 'd' || *format == 'i')
+	else if (*format == 'd')
 	{
 		number = va_arg(args, int);
-		count += handle_integer(number);
+		count += print_decimal(number);
+	}
+	else if (*format == 'i')
+	{
+		number = va_arg(args, int);
+		count += print_int(number);
+	}
+	else if (*format == 'b')
+	{
+		num = va_arg(args, unsigned int);
+		count += handle_binary(num);
 	}
 	else if (*format == 'b')
 	{
