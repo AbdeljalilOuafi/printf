@@ -10,15 +10,10 @@ int _printf(const char *format, ...)
 	int count;
 	va_list args;
 
-	int i;
-
-	char *null = "(null)";
-
-	i = 0;
 
 	if (format == NULL)
 	{
-		_putchar(null[i]);
+		return (-1);
 	}
 
 	count = 0;
