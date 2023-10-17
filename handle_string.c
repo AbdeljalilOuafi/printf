@@ -13,8 +13,7 @@ int handle_string(char *str)
 
 	if (str == NULL)
 	{
-		handle_string("(null)");
-		return (6);
+		return (-1);
 	}
 
 	while (str[i])
