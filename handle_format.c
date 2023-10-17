@@ -9,20 +9,16 @@
  */
 int handle_format(const char *format, va_list args)
 {
-	char *str;
 	int count = 0;
-	char character;
 	int number;
 
 	if (*format == 'c')
 	{
-		character = va_arg(args, int);
-		count += _putchar(character);
+		count += _putchar(va_arg(args, int));
 	}
 	else if (*format == 's')
 	{
-		str = va_arg(args, char *);
-		count += handle_string(str);
+		count = handle_string(va_arg(args, char *));
 	}
 	else if (*format == '%')
 	{
