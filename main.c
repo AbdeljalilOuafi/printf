@@ -28,23 +28,19 @@ int main(void)
     /*printf("Unsigned octal:[%o]\n", ui);*/
     /*_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
     /*printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);*/
-	/*_printf("Character:[%c]\n", 'H');*/
-	/*printf("Character:[%c]\n", 'H');*/
-	/*_printf("String:[%s]\n", "I am a string !");*/
-	/*printf("String:[%s]\n", "I am a string !");*/
+	_printf("Character:[%c]\n", 'H');
+	printf("Character:[%c]\n", 'H');
+	_printf("String:[%s]\n", "I am a string !");
+	printf("String:[%s]\n", "I am a string !");
     /*("Address:[%p]\n", addr);*/
     /*printf("Address:[%p]\n", addr);*/
-	/*_printf("Percent:[%%]\n");*/
-	/*printf("Percent:[%%]\n");*/
+	_printf("Percent:[%%]\n");
+	printf("Percent:[%%]\n");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
     /*_printf("Unknown:[%r]\n")*/
     /*printf("Unknown:[%r]\n");*/
 
-	/*int count;*/
-
-	/*count = _printf("%s%c%%", "F", 'F');*/
-	/*printf("\n%d\n", count);*/
-
 	return (0);
+
 }
