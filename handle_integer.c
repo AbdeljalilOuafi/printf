@@ -1,50 +1,43 @@
 #include "main.h"
-
 /**
- * handle_integer - This function converts
- * the integer into a string in order to be
- * printed using the _putchar function
- * @num: integer to be converted
- * Return: lenght of the number
-*/
-int handle_integer(int num)
+ * print_int - Prints an integer
+ * @n: argument for int
+ * Return: count
+ */
+int print_int(int n)
 {
-	int i, end, start, remainder;
-	char buffer[12];
-	int position = 0;
-	char temp;
+	int num, length = n % 10, d, num2 = 1;
+	int  count = 1;
 
-	if (num < 0)
+	n = n / 10;
+	num = n;
+
+	if (length < 0)
 	{
 		_putchar('-');
 		num = -num;
+		n = -n;
+		length = -length;
+		count++;
 	}
-	if (num == 0)
+	if (num > 0)
 	{
-		buffer[position] = '0';
-		position++;
+		while (num / 10 != 0)
+		{
+			num2 = num2 * 10;
+			num = num / 10;
+		}
+			num = n;
+		while (num2 > 0)
+		{
+			d = num / num2;
+			_putchar(d + '0');
+			num = num - (d * num2);
+			num2 = num2 / 10;
+			count++;
 	}
-	while (num > 0)
-	{
-		remainder = num % 10;
+	}
+	_putchar(length + '0');
 
-		buffer[position] = remainder + '0';
-		position++;
-		num = num / 10;
-	}
-	start = 0;
-	end = position - 1;
-	while (start < end)
-	{
-		temp = buffer[start];
-
-		buffer[start] = buffer[end];
-		buffer[end] = temp;
-		start++;
-		end--;
-	}
-		buffer[position] = '\0';
-	for (i = 0; i < position; i++)
-		_putchar(buffer[i]);
-	return (position);
+	return (count);
 }
