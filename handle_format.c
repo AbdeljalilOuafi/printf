@@ -30,9 +30,9 @@ int handle_format(const char *format, va_list args)
 		/*number = va_arg(args, int);*/
 		/*+= handle_integer(number);*/
 	/*}*/
-	else if (*format == '%')
+	else if (*format)
 	{
-		_putchar('%');
+		_putchar(*format);
 		count++;
 	}
 	return (count);
