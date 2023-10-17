@@ -31,8 +31,6 @@ int handle_format(const char *format, va_list args)
 		number = va_arg(args, int);
 		count += handle_integer(number);
 	}
-	/*else if (*format == '%')*/
-
 	else
 	{
 		_putchar(*format);

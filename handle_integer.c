@@ -9,7 +9,7 @@
 */
 int handle_integer(int num)
 {
-	int i, end, star, remainder;
+	int i, end, start, remainder;
 	char buffer[12];
 	int position = 0;
 	char temp;
