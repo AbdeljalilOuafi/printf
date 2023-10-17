@@ -9,23 +9,21 @@
  */
 int handle_format(const char *format, va_list args)
 {
-	char *str;
 	int count = 0;
-	char character;
 	int number;
 
 	if (*format == 'c')
 	{
-		character = va_arg(args, int);
-		_putchar(character);
-		count++;
+		count += _putchar(va_arg(args, int));
 	}
 	else if (*format == 's')
 	{
-		str = va_arg(args, char *);
-		count += handle_string(str);
+		count = handle_string(va_arg(args, char *));
 	}
-
+	else if (*format == '%')
+	{
+		count += _putchar('%');
+	}
 	else if (*format == 'd' || *format == 'i')
 	{
 		number = va_arg(args, int);
@@ -33,9 +31,9 @@ int handle_format(const char *format, va_list args)
 	}
 	else
 	{
+		write(1, "%", 1);
 		_putchar(*format);
-		count++;
-		format++;
+		count += 2;
 	}
 	return (count);
 }

@@ -8,31 +8,34 @@
 int _printf(const char *format, ...)
 {
 	int count;
+
 	va_list args;
+
+	va_start(args, format);
+
+	count = 0;
 
 	if (!format)
 	{
 		return (-1);
 	}
 
-	count = 0;
-
-	va_start(args, format);
-
 	while (*format)
 	{
 		if (*format == '%')
 		{
 			format++;
+				if (*format == '\0')
+				{
+					return (-1);
+				}
 			count += handle_format(format, args);
-			format++;
 		}
 		else
 		{
-			_putchar(*format);
-			count++;
-			format++;
+			count += _putchar(*format);
 		}
+		format++;
 	}
 	va_end(args);
 	return (count);

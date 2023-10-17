@@ -6,13 +6,9 @@
 */
 int handle_string(char *str)
 {
-	char *null;
-
-	int count;
-
 	int i;
-
-	count = 0;
+	char *null;
+	int count = 0;
 
 	if (str == NULL)
 	{
@@ -25,12 +21,12 @@ int handle_string(char *str)
 		}
 		return (6);
 	}
-
 	while (*str)
 	{
 		_putchar(*str);
 		count++;
 		str++;
 	}
+
 	return (count);
 }
