@@ -40,11 +40,6 @@ int handle_format(const char *format, va_list args)
 		num = va_arg(args, unsigned int);
 		count += handle_binary(num);
 	}
-	else if (*format == 'b')
-	{
-		number = va_arg(args, unsigned int);
-		count += printBinary(num);
-	}
 	else
 	{
 		write(1, "%", 1);
