@@ -9,11 +9,10 @@
 */
 int handle_integer(int num)
 {
-	int i;
+	int i, end, star, remainder;
 	char buffer[12];
 	int position = 0;
-	int start;
-	int end;
+	char temp;
 
 	if (num < 0)
 	{
@@ -27,7 +26,7 @@ int handle_integer(int num)
 	}
 	while (num > 0)
 	{
-		int remainder = num % 10;
+		remainder = num % 10;
 
 		buffer[position] = remainder + '0';
 		position++;
@@ -37,7 +36,7 @@ int handle_integer(int num)
 	end = position - 1;
 	while (start < end)
 	{
-		char temp = buffer[start];
+		temp = buffer[start];
 
 		buffer[start] = buffer[end];
 		buffer[end] = temp;
@@ -47,6 +46,5 @@ int handle_integer(int num)
 		buffer[position] = '\0';
 	for (i = 0; i < position; i++)
 		_putchar(buffer[i]);
-
 	return (position);
 }
