@@ -24,10 +24,15 @@ int handle_format(const char *format, va_list args)
 	{
 		count += _putchar('%');
 	}
-	else if (*format == 'd' || *format == 'i')
+	else if (*format == 'd')
 	{
 		number = va_arg(args, int);
-		count += handle_integer(number);
+		count += print_decimal(number);
+	}
+	else if (*format == 'i')
+	{
+		number = va_arg(args, int);
+		count += print_int(number);
 	}
 	else
 	{
