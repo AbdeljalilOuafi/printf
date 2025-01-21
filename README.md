@@ -22,7 +22,7 @@ This project serves as an in-depth exploration of how foundational functions lik
 
 # AUTHORS :
 
-**Abdeljalil Ouafi:** abdeljalilouafi55@gmail.com
-**Abdelhakim Smox Joulal:** joulal1994@gmail.com
+- **Abdeljalil Ouafi:** - [abdeljalilouafi55@gmail.com](mailto:abdeljalilouafi55@gmail.com)
+- **Abdelhakim Joulal:** - [joulal1994@gmail.com](mailto:joulal1994@gmail.com)
 
 
